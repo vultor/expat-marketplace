@@ -16,7 +16,7 @@
      */
     function apologize($message)
     {
-        render("apology.php", ["message" => $message]);
+        render("views/v_apology.php", ["message" => $message]);
         exit;
     }
 
@@ -26,7 +26,7 @@
      */
     function dump($variable)
     {
-        require("templates/dump.php");
+        require("views/dump.php");
         exit;
     }
 
@@ -147,19 +147,19 @@
     function render($template, $values = [])
     {
         // if template exists, render it
-        if (file_exists("templates/$template"))
+        if (file_exists("views/$template"))
         {
             // extract variables into local scope
             extract($values);
 
             // render header
-            require("templates/header.php");
+            require("views/_v_header.php");
 
             // render template
-            require("templates/$template");
+            require("views/$template");
 
             // render footer
-            require("templates/footer.php");
+            require("views/_v_footer.php");
         }
 
         // else err
