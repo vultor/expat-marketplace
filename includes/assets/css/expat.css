@@ -1,0 +1,154 @@
+/*
+ * Custom CSS for Expat Marketplace app 
+ *
+ */
+
+.ui-content {
+    padding: .5em 1em;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: .1em;
+	margin-top: .1em;
+}
+
+p {
+	margin: .2em 0;
+	text-align: center;
+}
+
+/* smaller text */
+.smaller {
+	font-size: .7em;
+	text-align: left;
+}
+
+.left {
+	text-align: left;
+}
+
+.green {
+	background-color: white;
+	color: green;
+	font-weight: bold;
+}
+
+/* Center images */
+img.center {
+	display: block;
+	margin: 0 auto;
+}
+
+img#gpsmap {
+	width: 85%;
+}
+
+#gpsuseraddress {
+	background-color: #F2F2F2;
+	border: solid 1px #175882;
+	border-radius: 2px;
+	color: #000000;
+}
+
+/* Center the header */
+.ui-header .ui-title, .ui-footer .ui-title {
+    margin: 0 2.5%;
+}
+
+/* Remove the dividing line between the form fields */
+.ui-hide-label.ui-br, .no-field-separator {
+    border-bottom-width: 0;
+}
+.ui-field-contain.ui-hide-label, .no-field-separator {
+    margin: .2em 0;
+    padding: 0;
+}
+
+/* Remove text shadow on links */
+.ui-overlay-d, .ui-page-theme-d, .ui-page-theme-d .ui-panel-wrapper {
+    text-shadow: none;
+}
+
+/* Link color darker and not bold */
+.ui-page-theme-d a, html .ui-bar-d a, html .ui-body-d a, html body .ui-group-theme-d a {
+    color: #005599 /*{d-link-color}*/;
+    font-weight: normal;
+}
+.ui-page-theme-d a:visited, html .ui-bar-d a:visited, html .ui-body-d a:visited, html body .ui-group-theme-d a:visited {
+    color: #005599 /*{d-link-visited}*/;
+}
+
+/* table markup */
+table {
+    color: black;
+    background: #fff;
+    border: 1px solid #b4b4b4;
+    font: 17px helvetica;
+    padding: 0;
+    margin-top:10px;
+    width: 100%;
+    -webkit-border-radius: .5em;
+}
+
+table thead tr {
+    background: #fdfdfd;
+}
+
+table thead th {
+	border-right: 1px solid #b4b4b4;
+}
+
+table thead th:first-child {
+	border-radius: 0.5em 0 0 0;
+}
+
+table thead th:last-child {
+	border-right: none;
+	border-radius: 0 0.5em 0 0;
+}
+
+table tr td {
+    color: #666;
+    border-bottom: 1px solid #b4b4b4;
+    border-right: 1px solid #b4b4b4;
+    padding: 2px;
+}
+         
+table tr td:last-child {
+    border-right: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:last-child td:last-child {
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+table tr:last-child td:first-child {
+    border-radius: 0 0 0 0.5em;
+}
+
+/* hide the column toggle button on browse stores */
+.ui-table-columntoggle-btn {
+    display: none;
+}
+
+/* Table at smaller viewports */
+@media only all {
+	.ui-table-reflow tbody th {
+	    margin-top: 0em;
+	    border-right: 1px solid #b4b4b4;
+	}
+}
+
+/* Expand form field label widths at this screen size */
+@media (min-width: 28em){
+	.ui-field-contain > label, .ui-field-contain .ui-controlgroup-label, .ui-field-contain > .ui-rangeslider > label {
+	    float: left;
+	    width: 80%;
+	    margin: .5em 2% 0 0;
+	}
+}
