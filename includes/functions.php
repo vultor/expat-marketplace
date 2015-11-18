@@ -26,7 +26,7 @@
      */
     function dump($variable)
     {
-        require("templates/dump.php");
+        require("views/dump.php");
         exit;
     }
 
@@ -153,13 +153,13 @@
             extract($values);
 
             // render header
-            require("templates/header.php");
+            require("views/header.php");
 
             // render template
-            require("templates/$template");
+            require("views/$template");
 
             // render footer
-            require("templates/footer.php");
+            require("views/footer.php");
         }
 
         // else err
